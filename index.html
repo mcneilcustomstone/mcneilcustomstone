@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>McNeil Custom Stone</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="stylesheet" href="https://use.typekit.net/exr0cjd.css">
+	<!-- Slick Image Carousel -->
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<img src="img/mcs-granitepeaks.png" />
+			<div class="titles">
+				<h1>MCNEIL CUSTOM STONE</h1>
+				<h2>Quality Stone & Quality Service</h2>
+			</div>
+		</header>
+		
+		
+		<!-- Slick Image Carousel -->
+		<div class="photo-reel">
+			<div class="reel-item"><img src="https://picsum.photos/936/624?random=1" width="auto" height="auto"></div>
+			<div class="reel-item"><img src="https://picsum.photos/936/624?random=2" width="auto" height="auto"></div>
+			<div class="reel-item"><img src="https://picsum.photos/936/624?random=3" width="auto" height="auto"></div>
+			<div class="reel-item"><img src="https://picsum.photos/936/624?random=4" width="auto" height="auto"></div>
+			<div class="reel-item"><img src="https://picsum.photos/936/624?random=5" width="auto" height="auto"></div>
+		</div>
+		<div class="photo-dots"></div>
+		<!---->
+		<div class="flex-container">
+			<div class="flex-item">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor elit ac condimentum porttitor. Praesent tortor justo, pharetra eu arcu sit amet, imperdiet vehicula sapien. Suspendisse quis aliquet quam. Fusce mattis dolor dolor, in consequat ante maximus sed. Sed tincidunt laoreet elit at euismod. Nam a pulvinar dolor, pellentesque interdum risus. Nulla ullamcorper venenatis magna, eget imperdiet justo lobortis vel.</p>
+				<p>Curabitur ullamcorper dignissim nulla, pharetra malesuada turpis hendrerit ac. Etiam tortor eros, gravida vel leo quis, tincidunt rutrum massa. Sed placerat turpis sed elit aliquam consequat. Pellentesque sed justo eget eros auctor condimentum vel vel enim. Integer sollicitudin interdum leo, vitae ultrices ligula volutpat ut. Nulla congue augue nulla, sed pretium enim volutpat condimentum. Fusce pretium magna non ultricies hendrerit. Sed in tortor eget ante maximus suscipit.</p>
+			</div>
+			<div class="flex-col">
+				<div class="flex-item center-text">
+					<h1>Get a Quote Today</h1>
+					<p ><a class="mail" href="mailto:don4granite(at)gmail(dot)com"></a></p>
+				</div>
+				<div class="flex-item center-text">
+					<h1>Registered Contractor</h1>
+					<p>ROC#0123456789</p>
+				</div>
+				<div class="flex-item center-text">
+					<p class="small"><script type="text/javascript">document.write(new Date().getFullYear());</script>&nbsp;&copy;&nbsp;McNeil Custom Stone</p>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script type="text/javascript">
+	    $(document).ready(function(){
+	      $('.photo-reel').slick({
+			  autoplay: true,
+			  autoplaySpeed: 6000,
+			  infinite: true,
+			  speed: 1000,
+			  fade: true,
+			  cssEase: 'linear',
+			  dots: false,
+			  arrows: false
+	      });
+	    });
+		$(function() {
+		 $('a.mail').each(function() {
+		  this.href = this.href.replace('(at)', '@').replace('(dot)', '.');
+		  // Remove this line if you don't want to set the email address as link text:
+		  this.innerHTML = "Email: "+this.href.replace('mailto:', '');
+		 });
+		});
+	</script>
+</body>
+</html>

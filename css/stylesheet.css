@@ -1,0 +1,105 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background: #EEE;
+	color: #111;
+	font-size: 24px;
+}
+
+.container {
+	width: 960px;
+	max-width: 90%;
+	margin: auto;
+}
+
+header {
+	text-align: center;
+	padding-bottom: 16px;
+}
+header img {
+	height: 300px;
+	margin: 16pt 0;
+	background: #FFF;
+}
+
+header .titles {
+	margin: 0;
+	background: #FFF;
+	padding: 12px 0;
+}
+header .titles h1 {
+	font-family: "Paralucent", sans-serif;
+	font-weight: 400;
+	font-size: 75px;
+	letter-spacing: 3px;
+	margin: 0;
+}
+header .titles h2 {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	margin: 0;
+}
+
+.photo-reel {
+	padding: 0;
+	width: 960px;
+	height: 640px;
+	margin: 32px auto;
+}
+
+.reel-item {
+	padding: 12px;
+	background: #FFF;
+}
+
+h1 {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	text-align: center;
+}
+.center-text {
+	text-align: center;
+}
+p {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	font-size: 24px;
+}
+
+a {
+	color: #2ecc40;
+	text-decoration: none;
+}
+a:hover {
+	color: #3d9970;
+}
+a:visited {
+	color: #2ecc40;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.flex-col {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	background: none;
+	width: 474px;
+}
+
+.flex-item {
+	width: 450px;
+	padding: 12px;
+	background: #FFF;
+	margin-bottom: 12px;
+}
+
+.small {
+	font-size: .75em;
+}
