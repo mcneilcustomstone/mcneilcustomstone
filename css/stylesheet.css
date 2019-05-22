@@ -1,5 +1,5 @@
 html,body {
-  background: #FFF;
+  background: #EEE;
   color: #111;
   font-size: 24px;
   margin: 0;
@@ -48,6 +48,9 @@ a.butn-green:visited {color: #ffffff;}
 .container {
   margin: auto;
   max-width: 90%;
+  background: #FFF;
+  box-shadow: 0 0 8px #AAA;
+  padding: 0 12px;
 }
 
 .flex-col {
