@@ -4,12 +4,15 @@ $(document).ready(function() {
 		// Remove this line if you don't want to set the email address as link text:
 		//this.innerHTML = "Email: "+this.href.replace('mailto:', '');
 	});
+	$('a.phone').each(function(){
+		this.href = 'tel:' + $(this).attr('title').split('').reverse().join('');
+	});
 	$('.obfEmail').each(function(){
 		this.title = $(this).attr('title').replace('(at)','@').replace('(dot)','.');
-		$(this).text('Email: ' + $(this).attr('title'));
+		$(this).text($(this).attr('title'));
 	});
 	$('.obfNumber').each(function(){
 		this.title = $(this).attr('title').split('').reverse().join('');
-		$(this).text('Phone: ' + $(this).attr('title'));
+		$(this).text($(this).attr('title'));
 	});
 });
